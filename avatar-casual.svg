@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="casualBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F59E0B"/>
+      <stop offset="50%" stop-color="#EC4899"/>
+      <stop offset="100%" stop-color="#8B5CF6"/>
+    </linearGradient>
+    <linearGradient id="skinGradCasual" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDDEC0"/>
+      <stop offset="100%" stop-color="#EAB892"/>
+    </linearGradient>
+    <linearGradient id="hoodieGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#312E81"/>
+      <stop offset="100%" stop-color="#1E1B4B"/>
+    </linearGradient>
+    <filter id="shadowCasual" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Background Circle with vibrant neon gradient -->
+  <circle cx="200" cy="200" r="185" fill="url(#casualBg)"/>
+  <circle cx="200" cy="200" r="175" fill="#0F172A" opacity="0.2"/>
+
+  <!-- Fun geek elements -->
+  <text x="45" y="85" fill="#ffffff" opacity="0.3" font-family="monospace" font-size="22">🚀</text>
+  <text x="325" y="95" fill="#ffffff" opacity="0.3" font-family="monospace" font-size="22">☕</text>
+  <text x="50" y="320" fill="#ffffff" opacity="0.3" font-family="monospace" font-size="22">⚡</text>
+  <text x="320" y="325" fill="#ffffff" opacity="0.3" font-family="monospace" font-size="22">💻</text>
+
+  <!-- Headphone Band over head -->
+  <path d="M125 180 C 125 90, 275 90, 275 180" stroke="#111827" stroke-width="12" stroke-linecap="round" fill="none"/>
+  <path d="M135 170 C 135 105, 265 105, 265 170" stroke="#06B6D4" stroke-width="4" stroke-linecap="round" fill="none"/>
+
+  <!-- Casual Developer Group -->
+  <g filter="url(#shadowCasual)">
+    <!-- Hoodie Shoulders -->
+    <path d="M85 380 C 105 295, 140 265, 200 265 C 260 265, 295 295, 315 380 Z" fill="url(#hoodieGrad)"/>
+    
+    <!-- Hoodie Strings & Center V -->
+    <path d="M165 265 L 200 310 L 235 265" stroke="#4F46E5" stroke-width="4" fill="none"/>
+    <circle cx="185" cy="325" r="4" fill="#E2E8F0"/>
+    <line x1="185" y1="290" x2="185" y2="325" stroke="#E2E8F0" stroke-width="3"/>
+    <circle cx="215" cy="335" r="4" fill="#E2E8F0"/>
+    <line x1="215" y1="290" x2="215" y2="335" stroke="#E2E8F0" stroke-width="3"/>
+
+    <!-- Neck -->
+    <path d="M178 220 L 178 275 C 178 285, 222 285, 222 275 L 222 220 Z" fill="url(#skinGradCasual)"/>
+
+    <!-- Head & Face -->
+    <ellipse cx="200" cy="180" rx="60" ry="72" fill="url(#skinGradCasual)"/>
+
+    <!-- Casual Messy/Modern Hair -->
+    <path d="M136 170 C 130 115, 155 90, 200 90 C 250 90, 270 115, 264 165 C 248 135, 220 120, 195 125 C 170 130, 150 145, 136 170 Z" fill="#3B1C10"/>
+    <path d="M150 130 C 160 110, 185 105, 195 115" stroke="#3B1C10" stroke-width="6" stroke-linecap="round" fill="none"/>
+
+    <!-- Eyebrows -->
+    <path d="M158 154 Q 172 148 186 153" stroke="#3B1C10" stroke-width="4" stroke-linecap="round" fill="none"/>
+    <path d="M214 153 Q 228 148 242 154" stroke="#3B1C10" stroke-width="4" stroke-linecap="round" fill="none"/>
+
+    <!-- Eyes (cheerful) -->
+    <circle cx="172" cy="170" r="5" fill="#1E293B"/>
+    <circle cx="228" cy="170" r="5" fill="#1E293B"/>
+    <circle cx="174" cy="168" r="1.5" fill="#FFFFFF"/>
+    <circle cx="230" cy="168" r="1.5" fill="#FFFFFF"/>
+
+    <!-- Cheerful Wink/Smile -->
+    <path d="M197 180 Q 200 193 205 193" stroke="#D79B75" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <path d="M180 210 Q 200 230 220 210" stroke="#E11D48" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+
+    <!-- Headphone Earcups -->
+    <rect x="116" y="155" width="22" height="42" rx="10" fill="#06B6D4" stroke="#111827" stroke-width="3"/>
+    <rect x="262" y="155" width="22" height="42" rx="10" fill="#06B6D4" stroke="#111827" stroke-width="3"/>
+  </g>
+
+  <!-- Casual Mode Badge -->
+  <g transform="translate(250, 290)">
+    <rect width="125" height="34" rx="17" fill="#6366F1" filter="url(#shadowCasual)"/>
+    <circle cx="18" cy="17" r="5" fill="#FBBF24"/>
+    <text x="32" y="22" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-weight="700" font-size="12">CREATIVE MODE</text>
+  </g>
+</svg>
